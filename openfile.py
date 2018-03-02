@@ -1,3 +1,4 @@
 with open("data/iris.csv") as f:
-  contents = f.read()
-  print(contents)
+  for line in f:
+    print(line.split(',')[0])
+
